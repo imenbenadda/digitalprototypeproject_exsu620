@@ -5,7 +5,7 @@ Imen Benadda, Nathalie Obi, Kayla Arab, Karman Kang, Lucy Han
 
 A bench prototype that measures cuff pressure continuously in cmH2O, tells a cough or a suction pass from a leak, and alarms on a black, monitor style Wi-Fi dashboard when the cuff stays outside 20 to 30 cmH2O for too long. **Bench only. Not a medical device.**
 
-**Status (5 Nov 2026, firmware `2026-11-05 v8`, alert service v1):** live measurement, alarm rules, Wi-Fi dashboard and CSV export ran on the board in one bench run (3 Nov 2026, `data/cuff_log_2026-11-03_1703.csv`). Dashboard revision B, the cough and suction labels, the SQLite database and the text message alerts were tested in the desktop simulation (`tools/`) only; texts ran in dry run. Full results and limitations are in `docs/EXSU620_Group2_Design_Dossier.pdf`.
+**Status (5 Nov 2026, firmware `2026-11-05 v8`, alert service v1):** live measurement, alarm rules, Wi-Fi dashboard and CSV export ran on the board in two bench runs (3 Nov 2026, `data/`). Dashboard revision B, the cough and suction labels, the SQLite database and the text message alerts were tested in the desktop simulation (`tools/`) only; texts ran in dry run. Full results and limitations are in `docs/EXSU620_Group2_Design_Dossier.pdf`.
 
 ---
 
@@ -15,7 +15,8 @@ A bench prototype that measures cuff pressure continuously in cmH2O, tells a cou
 |---|---|
 | `firmware/cuff_pressure.py` | The only file that runs on the Pico: sensor, zero, alarm rules, cough/suction labels, Wi-Fi network, dashboard page, 2 h log |
 | `service/cuff_service.py` | Laptop alert service: SQLite database (`cuff.db`), a text message for every alert, shift report |
-| `data/cuff_log_2026-11-03_1703.csv` | Bench run of 3 Nov 2026, 91 rows, exported from the dashboard |
+| `data/cuff_log_2026-11-03_1701.csv` | Bench run 1, 3 Nov 2026, 68 rows (room air baseline, then the tubing leak) |
+| `data/cuff_log_2026-11-03_1703.csv` | Bench run 2, 3 Nov 2026, 91 rows (technical, advisory, critical, acknowledgement) |
 | `tools/sim_cuff_pressure.py` | Runs the firmware's alarm logic on a computer with scripted traces, and serves the dashboard for testing |
 | `docs/EXSU620_Group2_Design_Dossier.pdf` | Design dossier D1 to D9 |
 | `docs/dashboard_sms_signup.png` | Dashboard SMS ALERTS sign-up (name, phone, consent) |
@@ -140,4 +141,4 @@ Switch the scenario with `http://127.0.0.1:8765/scen/normal` (or `cough`, `sucti
 
 ## 10. Limitations
 
-One bench run only; manometer comparison not recorded; leak label and dashboard revision B tested in simulation only; zero taken once at start-up (room pressure drift); SQLite and texts tested in simulation only (dry run); no bedside alarm independent of the laptop. See dossier sections 9 to 11.
+Two short bench runs only; manometer comparison not recorded; leak label and dashboard revision B tested in simulation only; zero taken once at start-up (room pressure drift); SQLite and texts tested in simulation only (dry run); no bedside alarm independent of the laptop. See dossier sections 9 to 11.
