@@ -60,3 +60,5 @@
 ## 2026-11-05
 - Dossier: added Figure 1, photos of the final two-stopcock bench rig; later figures renumbered.
 - Dossier: zip file citations added beside each supporting file, Appendix A lists the submission zip contents.
+- Dossier: options table (dashboard replaces ring/speaker/button, laptop service modified, SMS instead of WhatsApp, OpenSCAD), Figure 2 and module table updated, Figure 6 redrawn with the alert service and phone, IF-11 reordered, new Printed parts section with Figure 10, FMEA FM-12/FM-13 mitigations.
+- cad/: OpenSCAD rig tray and stopcock clip with STL files.

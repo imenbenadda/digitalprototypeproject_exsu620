@@ -18,6 +18,7 @@ A bench prototype that measures cuff pressure continuously in cmH2O, tells a cou
 | `data/cuff_log_2026-11-03_1701.csv` | Bench run 1, 3 Nov 2026, 68 rows (room air baseline, then the tubing leak) |
 | `data/cuff_log_2026-11-03_1703.csv` | Bench run 2, 3 Nov 2026, 91 rows (technical, advisory, critical, acknowledgement) |
 | `tools/sim_cuff_pressure.py` | Runs the firmware's alarm logic on a computer with scripted traces, and serves the dashboard for testing |
+| `cad/cuff_rig_parts.scad`, `cad/*.stl` | OpenSCAD printed parts: rig tray (breadboard + Pico, engraved stopcock B reminder) and stopcock A/B clip. Designed, not yet printed |
 | `docs/EXSU620_Group2_Design_Dossier.pdf` | Design dossier D1 to D9 |
 | `docs/dashboard_sms_signup.png` | Dashboard SMS ALERTS sign-up (name, phone, consent) |
 | `docs/final_rig.jpg` | Photos of the final bench rig (two stopcocks, 200 cc syringe, manometer, sensor chamber, trachea) |
@@ -52,6 +53,10 @@ Leave 3Vo, SDO and CS unconnected.
 Why: the first single stopcock build leaked in the tubing and the leak could not be sealed. With two stopcocks and a 200 cc syringe, air can be drawn back in and the balloon re-inflated during a run, and the second stopcock gives a port for the manometer.
 
 **Project rule:** the manometer is for calibration and validation only. Turn stopcock B away from the manometer during a logging run.
+
+### Printed parts (designed, not yet printed)
+
+`cad/cuff_rig_parts.scad` (OpenSCAD, free). Set `part = "tray"` or `"clip"`, F6, File > Export > STL. PLA, 0.2 mm layers, 20% infill, no supports. Measure every value marked (M) with calipers first. Print one clip and test the snap fit; change `d` by 0.3 mm if needed. Fix both parts to the rig base with double sided tape.
 
 ## 3. Software set-up
 
