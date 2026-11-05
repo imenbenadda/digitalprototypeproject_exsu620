@@ -20,6 +20,7 @@ A bench prototype that measures cuff pressure continuously in cmH2O, tells a cou
 | `tools/sim_cuff_pressure.py` | Runs the firmware's alarm logic on a computer with scripted traces, and serves the dashboard for testing |
 | `docs/EXSU620_Group2_Design_Dossier.pdf` | Design dossier D1 to D9 |
 | `docs/dashboard_sms_signup.png` | Dashboard SMS ALERTS sign-up (name, phone, consent) |
+| `docs/final_rig.jpg` | Photos of the final bench rig (two stopcocks, 200 cc syringe, manometer, sensor chamber, trachea) |
 | `docs/dashboard_states.png` | Dashboard revision B: normal, probable cough, probable suction, air leak detected |
 | `CHANGELOG.md` | Every change, by date |
 

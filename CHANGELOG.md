@@ -56,3 +56,6 @@
 - Added `service/cuff_service.py`: laptop alert service. SQLite database `cuff.db` (readings, alarm_events, acks, users, notifications), a Twilio text message for every alert to every registered phone (dry run without keys), retries, and a CR-4 shift report. Tested against the simulator: 4 events, 3 texts (dry run).
 - Dossier: AI use statement (handbook 6.4), equipment limitation box, ER-1/ER-3 PASS, ER-2 NOT VERIFIED with cause, named sign-offs, interface directions and ranges, database and text alert section (D5), FM-15.
 - Added bench run 1 (`data/cuff_log_2026-11-03_1701.csv`) to the repository and dossier: 47 s room air baseline within ±0.04 cmH2O, technical state, and the tubing leak (22.6 to 1.1 cmH2O in 22 s). Dossier: build record photos (Figure 8), two-run trace (Figure 9).
+
+## 2026-11-05
+- Dossier: added Figure 1, photos of the final two-stopcock bench rig; later figures renumbered.
