@@ -59,3 +59,4 @@
 
 ## 2026-11-05
 - Dossier: added Figure 1, photos of the final two-stopcock bench rig; later figures renumbered.
+- Dossier: zip file citations added beside each supporting file, Appendix A lists the submission zip contents.
